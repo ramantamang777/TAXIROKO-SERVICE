@@ -57,63 +57,42 @@
     </section>
 
     <!-- logo section ends here -->
-
-    <!-- content section -->
-
-  <!-- <div class="container-fluid">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-md-6">
-                <div class="back"></div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="back"></div>
-          </div>
-        </div>
-    </div>
-  </div> -->
+    
     <!-- cards section here -->
     <div class="container-fluid">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card mt-4">
-                        <div class="card-header text-center mt-4"><h4 style="padding: 5px;">An Ecosystem with Transparency and Governance</h4></div>
-                        <div class="card-body card-body-img">
+                    <div class="card card-t mt-4">
+                        <div class="card-header text-center"><h4 style="padding: 5px;">An Ecosystem with Transparency and Governance</h4></div>
+                        <div class="card-body card-body-img text-center">
                           <img src="img/3.png" alt="">
                             <p>MerCuric (Curic) is a Platform that brings Transparency to crypto. MerCuric will offer a bespoke crypto service ecosystem that assists tokens with launching, presales, and finding talent safely in the crypto industry.					
                             </p>
                         </div>
-
-                        <div class="card-footer text-center"><h6 > <a href="#"> link </a></h6></div>
                     </div>
                 </div>
 
                 <div class="col-md-4 ">
-                  <div class="card mt-4">
-                    <div class="card-header text-center mt-4"><h4 style="padding: 5px;">CURIC Launch</h4></div>
-                    <div class="card-body card-body-img">
+                  <div class="card card-t mt-4">
+                    <div class="card-header text-center "><h4 style="padding: 5px;">CURIC Launch</h4></div>
+                    <div class="card-body card-body-img text-center">
                       <img src="img/4.png" alt="">
                         <p>The CURIC Launch Decentralized Launchpad will offer top-level governance and transparency and support PreSales for decentralized finance (DeFi) projects. Many of the current online launchpads offer PreSales for crypto projects with little oversight, support, and security for their investors. Our mandated in- house KYC and AI-enabled scans smart contracts for vulnerabilities and potential scams to enhance security and trust.                        
 
                         </p>
                     </div>
-
-                    <div class="card-footer text-center "><h6> <a href="#"> link </a></h6></div>
                 </div>
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card mt-4">
-                    <div class="card-header text-center mt-4"><h4 style="padding: 5px;">CURIC Marketplace</h4></div>
-                    <div class="card-body card-body-img">
+                  <div class="card card-t mt-4">
+                    <div class="card-header text-center"><h4 style="padding: 5px;">CURIC Marketplace</h4></div>
+                    <div class="card-body card-body-img text-center">
                       <img src="img/5.png" alt="">
                         <p>The CURIC a fully integrated marketplace will act as a one-stop platform for all Crypto related services bridging the service providers and end-users. Hiring in the crypto industry is a difficult task at the moment.					
                         </p>
                     </div>
-
-                    <div class="card-footer text-center "><h6> <a href="#"> link</a></h6></div>
                 </div>
                 </div>
             </div>
@@ -135,38 +114,19 @@
    });
  </script>
 
-
- 
-     <!-- <script>
-      function myFunction() {
-      var element = document.body;
-      element.classList.toggle("dark-mode");
+ <script>
+   $(".change").on("click", function(){
+      if($(".navbar").hasClass("dark"))
+      {
+        $(".navbar").removeClass("dark");
+        $(".change").text("OFF");
       }
-   </script> -->
-
-<!-- <button onclick="myFunction()">Click Me</button>
-
-<div id="myDIV">Hello</div> -->
- 
- <!-- function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.innerHTML === "Hello") {
-    x.innerHTML = "Swapped text!";
-  } else {
-    x.innerHTML = "Hello";
-  }
-} -->
-<!-- <script>
-  $( ".change" ).on("click", function() {
-      if( $( "body" ).hasClass( "dark" )) {
-          $( "body" ).removeClass( "dark" );
-          $( ".change" ).text( "OFF" );
-      } else {
-          $( "body" ).addClass( "dark" );
-          $( ".change" ).text( "ON" );
+      else{
+        $(".navbar").addClass("dark");
+        $(".change").text("ON");
       }
-  });
-</script> -->
+   });
+ </script>
     
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
